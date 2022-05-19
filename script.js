@@ -8,9 +8,7 @@ function add_task(){
     let icon = document.createElement("i");
     let li_text = document.createTextNode(document.getElementById("task").value);
     
-    button.addEventListener("click", function remove(){
-        body.removeChild(ul);
-    })
+    button.addEventListener("click", ()=>{body.removeChild(ul);});
 
     icon.setAttribute("class", "fas fa-times");
 
